@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<dataset>
+	<table name="_orion_emails">
+		<column>email_id</column>
+		<column>to_name</column>
+		<column>to_email</column>
+		<column>from_name</column>
+		<column>from_email</column>
+		<column>subject</column>
+		<column>template_path_text</column>
+		<column>template_path_html</column>
+		<column>template_params</column>
+		<column>check_subscribed</column>
+		<column>queued</column>
+		<!-- omit these columns because dates cannot be predicted in our tests -->
+		<!--
+		<column>date_added</column>
+		<column>date_executed</column>
+		-->
+		<column>success</column>
+		<!--
+		<column>hash</column>
+		-->
+		<row>
+			<value>1</value>
+			<value>Aaron Larner</value>
+			<value>anlarner@gmail.com</value>
+			<value>Orion Studio</value>
+			<value>info@orionstudiomadison.com</value>
+			<value>An email send from EmailerTest::testSendEmail</value>
+			<value>Emailer/views/text.php</value>
+			<value>Emailer/views/html.php</value>
+			<value>[]</value>
+			<value>1</value>
+			<value>0</value>
+			<value>1</value>
+		</row>
+	</table>
+	<table name="_orion_email_unsubscriptions">
+		<column>email</column>
+		<column>email_id</column>
+		<column>date_unsubscribed</column>
+	</table>
+</dataset>
